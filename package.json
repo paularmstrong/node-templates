@@ -1,0 +1,20 @@
+{
+    "name": "template-bench",
+    "version": "0.0.1",
+    "description": "Comparison of Node.js template languages.",
+    "keywords": ["template", "benchmark"],
+    "repository": "",
+    "author": "Paul Armstrong <paul@paularmstrongdesigns.com>",
+    "dependencies": {
+        "swig": "0.3.0",
+        "nodelint": "0.4.0"
+    },
+    "main": "index",
+    "engines": {
+        "node": ">= 0.4.1"
+    },
+    "scripts": {
+        "prepublish": "npm prune",
+        "test": "make lint && make test"
+    }
+}
