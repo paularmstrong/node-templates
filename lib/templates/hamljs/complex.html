@@ -1,0 +1,12 @@
+%h1= header
+- if (items.length)
+  %ul
+  - each item in items
+    - if (item.current)
+      %li
+        %strong= item.name
+    - if (!item.current)
+      %li
+        %a{ href: item.name } item.name
+- if (!items.length)
+  %p The list is empty.

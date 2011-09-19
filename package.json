@@ -11,6 +11,7 @@
         "ejs": "0.4.2",
         "jade": "0.15.4",
         "coffeekup": "0.3.0",
+        "hamljs": "0.5.1",
         "nodelint": "0.4.0",
         "underscore": "1.1.7"
     },
