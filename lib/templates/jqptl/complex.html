@@ -1,0 +1,14 @@
+<h1>${header}</h1>
+{{if items.length}}
+<ul>
+{{each(i, item) items}}
+    {{if item.current}}
+    <li><strong>${item.name}</strong></li>
+    {{else}}
+    <li><a href="${item.url}">${item.name}</a></li>
+    {{/if}}
+{{/each}}
+</ul>
+{{els }}
+<p>The list is empty.</p>
+{{/if}}
