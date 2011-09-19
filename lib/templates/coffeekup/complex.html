@@ -1,13 +1,13 @@
-h1 @header
+h1 "#{@header}"
 if @items?
-    ul ->
-        for item in @items
-            if @item.current?
-                li ->
-                    strong @item.name
-            else
-                li ->
-                    a href: @item.url, -> #{item.name}
+  ul ->
+    for item in @items
+      if item.current
+        li ->
+          strong "#{item.name}"
+      else
+        li ->
+          a href: "#{item.url}", -> #{item.name}
 else
-p ->
+  p ->
     "The list is empty."

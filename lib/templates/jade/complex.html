@@ -1,11 +1,12 @@
 h1= header
 if items.length
   ul
-  for item in items
-    if item.current
-      li
-        strong= item.name
-    else
-      li [item.name](item.url)
+    for item in items
+      if item.current
+        li
+          strong= item.name
+      else
+        li
+          a(href=item.url)= item.name
 else
   p The list is empty.
