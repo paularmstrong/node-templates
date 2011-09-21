@@ -13,9 +13,10 @@
         "coffeekup": "0.3.0",
         "hamljs": "0.5.1",
         "jqtpl": "1.0.6",
-        "bench": "0.3.2",
+        "nopt": ">=1.0.8",
+        "bench": ">=0.3.2",
         "nodelint": "0.4.0",
-        "underscore": "1.1.7"
+        "underscore": ">=1.1.7"
     },
     "main": "index",
     "engines": {
