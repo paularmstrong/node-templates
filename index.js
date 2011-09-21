@@ -16,7 +16,7 @@ var nopt = require('nopt'),
     parsed = nopt(options, shortOpts, process.argv, 2);
 
 exports.time = parsed.time || 1000;
-exports.compareCount = parsed.compareCount || 8;
+exports.compareCount = parsed.comparisons || 8;
 
 _.each(files, function (file) {
     langs[file.replace('.js', '')] = require(__dirname + '/lib/languages/' + file);
