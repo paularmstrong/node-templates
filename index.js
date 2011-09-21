@@ -5,15 +5,18 @@ var nopt = require('nopt'),
     files = fs.readdirSync(__dirname + '/lib/languages/'),
     options = {
         type: String,
+        template: String,
         time: Number,
         comparisons: Number
     },
     shortOpts = {
         t: ['--type'],
+        tt: ['--template'],
         m: ['--time'],
         c: ['--comparisons']
     },
-    parsed = nopt(options, shortOpts, process.argv, 2);
+    parsed = nopt(options, shortOpts, process.argv, 2),
+    templateType = parsed.template || 'simple';
 
 exports.time = parsed.time || 1000;
 exports.compareCount = parsed.comparisons || 8;
@@ -29,19 +32,19 @@ exports.compare = (function () {
         switch (parsed.type) {
         case 'compile':
             cases[key + ' compile'] = function () {
-                lang.compile();
+                lang.compile(templateType);
             };
             break;
         case 'render':
             lang.compile();
             cases[key + ' render'] = function () {
-                lang.render();
+                lang.render(templateType);
             };
             break;
         default:
             cases[key + ' complete'] = function () {
-                lang.compile();
-                lang.render();
+                lang.compile(templateType);
+                lang.render(templateType);
             };
             break;
         }
