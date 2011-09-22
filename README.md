@@ -1,4 +1,4 @@
-# Node Template Bench
+# Node Templates
 
 The goal of this project is to be a source of comparison for the many different templating libraries available for Node.js. By implementing templates in the most similar manner possible, we can get fairly accurate benchmarks between compile and render steps of various template libraries.
 
