@@ -12,6 +12,7 @@ The goal of this project is to be a source of comparison for the many different 
 * [Jade@0.15.4](http://jade-lang.com/)
 * [jqtpl@1.0.6](https://github.com/kof/node-jqtpl)
 * [swig@0.3.0](https://github.com/paularmstrong/swig)
+* [Templ8@0.2.1](https://github.com/constantology/Templ8)
 
 ## Running
 
