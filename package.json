@@ -6,7 +6,7 @@
     "repository": "",
     "author": "Paul Armstrong <paul@paularmstrongdesigns.com>",
     "dependencies": {
-        "swig": "0.3.0",
+        "swig": "0.4.0",
         "mu": "0.5.2",
         "ejs": "0.4.2",
         "jade": "0.15.4",
