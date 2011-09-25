@@ -229,7 +229,7 @@ table tfoot tr:first-child td {
     text-shadow: -1px 1px 1px rgba(0,0,0,0.7);
 }
     #github:hover {
-        background-color: none;
+        background: none;
     }
 #github span {
     background-color: #DDD;
