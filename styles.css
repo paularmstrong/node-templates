@@ -30,10 +30,38 @@ h4 { font-size: 22px; line-height: 1.4em; }
 h5 { font-size: 18px; line-height: 1.4em; }
 h6 { font-size: 16px; line-height: 1.4em; }
 
+h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
+    font-size: 0.5em;
+}
+
+p, ul, ol, dl {
+    margin: 0 0 24px;
+}
+    ul, ol, dl {
+        margin-left: 24px;
+    }
+        ul li { list-style-type: disc; }
+        ul li li { list-style-type: square; }
+        ul li li li { list-style-type: circle; }
+        ol li { list-style-type: decimal; }
+        ol li li { list-style-type: lower-latin; }
+        ol li li li { list-style-type: lower-roman; }
+    dt {
+        font-weight: bold;
+    }
+        dd + dt {
+            margin-top: 24px;
+        }
+
+
 a,
 a:link {
     color: #527DF6;
     -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
     padding: 2px;
     margin: -2px;
     -webkit-border-radius: 2px;
