@@ -51,6 +51,6 @@ exports.compare = (function () {
     });
 
     return cases;
-})();
+}());
 
 require('bench').runMain();
