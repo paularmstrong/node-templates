@@ -92,5 +92,136 @@
         </table>
     </section>
 
+    <section>
+        <h1>Benchmarks</h1>
+
+        <table>
+            <caption>Compile and Render Benchmark Scores (bigger is better).<br />Run on a 2.93 GHz Intel Core i7 iMac with 12GB RAM.</caption>
+            <thead>
+                <tr>
+                    <th>Engine</th>
+                    <th>Average (mean)</th>
+                    <td colspan="9">Scores (hover for full value)</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Swig</th>
+                    <td class="mean" value="117.49738878629968">117.49</td>
+                    <td value="146.56031904287138">146.56</td>
+                    <td value="136.18290258449304">136.18</td>
+                    <td value="117.6470588235294">117.64</td>
+                    <td value="117.88211788211788">117.88</td>
+                    <td value="109.67098703888335">109.67</td>
+                    <td value="107.56972111553785">107.56</td>
+                    <td value="108.13492063492063">108.13</td>
+                    <td value="111.44278606965175">111.44</td>
+                    <td value="102.38568588469185">102.38</td>
+                </tr>
+                <tr>
+                    <th scope="row">JQTpl</th>
+                    <td class="mean" value="61.1296540333301">61.12</td>
+                    <td value="67.72908366533865">67.72</td>
+                    <td value="68.18181818181819">68.18</td>
+                    <td value="60.09852216748769">60.09</td>
+                    <td value="61.20434353405726">61.20</td>
+                    <td value="58.30039525691699">58.30</td>
+                    <td value="59.11330049261084">59.11</td>
+                    <td value="59.523809523809526">59.52</td>
+                    <td value="58.58987090367428">58.58</td>
+                    <td value="57.42574257425743">57.42</td>
+                </tr>
+                <tr>
+                    <th scope="row">Haml.js</th>
+                    <td class="mean" value="3.360279580908918">3.36</td>
+                    <td value="3.427592116538132">3.42</td>
+                    <td value="3.398470688190314">3.39</td>
+                    <td value="3.3112582781456954">3.31</td>
+                    <td value="3.4453057708871664">3.44</td>
+                    <td value="3.404255319148936">3.40</td>
+                    <td value="3.5056967572304996">3.50</td>
+                    <td value="3.3250207813798838">3.32</td>
+                    <td value="3.336113427856547">3.33</td>
+                    <td value="3.088803088803089">3.08</td>
+                </tr>
+                <tr>
+                    <th scope="row">EJS</th>
+                    <td class="mean" value="2.680037520632259">2.68</td>
+                    <td value="2.782931354359926">2.78</td>
+                    <td value="2.73972602739726">2.73</td>
+                    <td value="2.7548209366391183">2.75</td>
+                    <td value="2.608695652173913">2.60</td>
+                    <td value="2.6761819803746656">2.67</td>
+                    <td value="2.8544243577545196">2.85</td>
+                    <td value="2.3273855702094646">2.32</td>
+                    <td value="2.5619128949615715">2.56</td>
+                    <td value="2.8142589118198873">2.81</td>
+                </tr>
+                <tr>
+                    <th scope="row">Templ8</th>
+                    <td class="mean" value="2.0044155080199335">2.00</td>
+                    <td value="2.086230876216968">2.08</td>
+                    <td value="1.9723865877712032">1.97</td>
+                    <td value="1.996007984031936">1.99</td>
+                    <td value="1.9704433497536946">1.97</td>
+                    <td value="1.8598884066955983">1.85</td>
+                    <td value="1.9821605550049555">1.98</td>
+                    <td value="1.9723865877712032">1.97</td>
+                    <td value="2.094972067039106">2.09</td>
+                    <td value="2.1052631578947367">2.10</td>
+                </tr>
+                <tr>
+                    <th scope="row">Jade</th>
+                    <td class="mean" value="1.4473183684602648">1.44</td>
+                    <td value="1.4503263234227701">1.45</td>
+                    <td value="1.4836795252225519">1.48</td>
+                    <td value="1.4005602240896358">1.40</td>
+                    <td value="1.4503263234227701">1.45</td>
+                    <td value="1.4367816091954022">1.43</td>
+                    <td value="1.4214641080312722">1.42</td>
+                    <td value="1.422475106685633">1.42</td>
+                    <td value="1.3879250520471895">1.38</td>
+                    <td value="1.5723270440251573">1.57</td>
+                </tr>
+                <tr>
+                    <th scope="row">CoffeeKup</th>
+                    <td class="mean" value="0.38482460746470515">0.38</td>
+                    <td value="0.41050903119868637">0.41</td>
+                    <td value="0.4">0.4</td>
+                    <td value="0.373134328358209">0.37</td>
+                    <td value="0.3883495145631068">0.38</td>
+                    <td value="0.3901677721420211">0.39</td>
+                    <td value="0.38744672607516467">0.38</td>
+                    <td value="0.3943217665615142">0.39</td>
+                    <td value="0.3562522265764161">0.35</td>
+                    <td value="0.3632401017072285">0.36</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="3">Fastest</th>
+                    <th colspan="2">Versus</th>
+                    <th colspan="2">% Faster</th>
+                    <th colspan="2">Time Faster</th>
+                    <th colspan="2">Order of Magnitude Faster</th>
+                </tr>
+                <tr>
+                    <td colspan="3" rowspan="2">Swig</td>
+                    <td colspan="2">JQTpl (next fastest)</td>
+                    <td colspan="2">47.97%</td>
+                    <td colspan="2">1.92</td>
+                    <td colspan="2">0.28</td>
+                </tr>
+                <tr>
+                    <td colspan="2">CoffeeKup (slowest)</td>
+                    <td colspan="2">99.67%</td>
+                    <td colspan="2">305.33</td>
+                    <td colspan="2">2.48</td>
+                </tr>
+            </tfoot>
+        </table>
+
+    </section>
+
 </body>
 </html>

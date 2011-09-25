@@ -10,7 +10,7 @@ html,body,textarea,legend{font:14px/1.4em Helvetica,Arial,Verdana,sans-serif;col
 html,
 body {
 	background: #222;
-	max-width: 984px;
+	max-width: 1200px;
 	text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
 }
 
@@ -116,6 +116,27 @@ table tbody tr th:first-child {
     }
 table tfoot td {
     font-size: 11px;
+}
+
+td[value]:hover:after {
+    margin: 0 0 0 5px;
+    padding: 0 0.2em;
+    content: attr(value);
+    font-size: 0.8em;
+    position: absolute;
+    background: #DDD;
+    color: #222;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+}
+
+table tfoot tr:first-child th,
+table tfoot tr:first-child td {
+    padding-top: 20px;
+	background-color: rgba(50,50,50,0.6);
 }
 
 .no { color: #D00; }
