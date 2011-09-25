@@ -1,0 +1,58 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:900);
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,img,input,textarea,p,blockquote,table,th,td,a,abbr,address,caption,cite,code,dfn,em,strong,th,var,hr,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video,mark{margin:0;padding:0;background:transparent;border:0;border-collapse:collapse;border-spacing:0;line-height:inherit;font-style:normal;font-weight:normal;text-decoration:none;text-align:left;list-style:none;quotes:none;}
+article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary{display:block;}
+input:focus,a:focus,textarea:focus{outline:0;}
+blockquote:before,blockquote:after,q:before,q:after{content:'';}
+sup,sub{vertical-align:baseline;position:relative;top:-0.4em;}sub{top:0.4em;}
+html,body,textarea,legend{font:14px/1.4em Helvetica,Arial,Verdana,sans-serif;color:#EEE;}
+
+html,
+body {
+	background: #222;
+	max-width: 984px;
+}
+
+body {
+	margin: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Lato', sans-serif;
+	text-shadow: 1px 1px 5px rgba(0,0,0,1);
+}
+
+h1 { font-size: 48px; line-height: 1.4em; }
+h2 { font-size: 36px; line-height: 1.4em; }
+h3 { font-size: 28px; line-height: 1.4em; }
+h4 { font-size: 22px; line-height: 1.4em; }
+h5 { font-size: 18px; line-height: 1.4em; }
+h6 { font-size: 16px; line-height: 1.4em; }
+
+table {
+	width: 100%;
+}
+table thead {
+	background: #333;
+}
+table thead th {
+	padding: 20px 5px 0;
+	font-family: 'Lato', sans-serif;
+}
+table td,
+table th {
+	padding: 5px;
+}
+table tr:nth-child(even) {
+	background-color: rgba(50,50,50,0.5);
+}
+table tr td:nth-child(even),
+table tr th:nth-child(even) {
+	background-color: rgba(50,50,50,0.5);
+}
+table tr:hover {
+	background-color: rgba(255,255,255,0.3);
+}
+
+span.no { color: #D00; }
+span.yes { color: #0B0; }
