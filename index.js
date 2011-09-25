@@ -28,6 +28,14 @@ _.each(files, function (file) {
 exports.compare = (function () {
     var cases = {};
 
+    // return {
+    //     LANG: function (callback) {
+    //         langs.LANG.compile(templateType, function () {
+    //             langs.LANG.render(templateType, callback);
+    //         });
+    //     }
+    // }
+
     _.each(langs, function (lang, key) {
         switch (parsed.type) {
         case 'compile':
