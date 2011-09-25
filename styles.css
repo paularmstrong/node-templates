@@ -18,9 +18,14 @@ body {
 	margin: 20px;
 }
 
+section {
+    margin: 0 0 48px;
+}
+
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Lato', sans-serif;
 	text-shadow: 1px 1px 5px rgba(0,0,0,1);
+	margin: 0 0 0.2em;
 }
 
 h1 { font-size: 48px; line-height: 1.4em; }
@@ -34,7 +39,7 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
     font-size: 0.5em;
 }
 
-p, ul, ol, dl {
+p, ul, ol, dl, table {
     margin: 0 0 24px;
 }
     ul, ol, dl {
@@ -53,6 +58,17 @@ p, ul, ol, dl {
             margin-top: 24px;
         }
 
+code {
+    background: rgba(100,100,100,0.5);
+    padding: 2px;
+    margin: -2px;
+    font-family: Monaco, "Courier New", Courier, monospace;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+}
 
 a,
 a:link {
@@ -70,9 +86,6 @@ a:link {
     -o-border-radius: 2px;
     border-radius: 2px;
 }
-    a:visited {
-        color: #645cf6;
-    }
     a:hover {
         background: #527DF6;
         color: #DDD;
