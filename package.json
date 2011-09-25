@@ -7,18 +7,18 @@
     "homepage": "http://paularmstrong.github.com/node-templates/",
     "author": "Paul Armstrong <paul@paularmstrongdesigns.com>",
     "dependencies": {
-        "swig": "0.4.0",
-        "ejs": "0.4.2",
-        "jade": "0.15.4",
-        "coffeekup": "0.3.0",
-        "hamljs": "0.5.1",
-        "jqtpl": "1.0.6",
-        "mu2": "0.5.3",
-        "Templ8": "0.2.1",
         "nopt": ">=1.0.8",
         "bench": ">=0.3.2",
         "nodelint": "0.5.0",
-        "underscore": ">=1.1.7"
+        "underscore": ">=1.1.7",
+        "coffeekup": "0.3.0",
+        "ejs": "0.4.2",
+        "hamljs": "0.5.1",
+        "jade": "0.15.4",
+        "jqtpl": "1.0.6",
+        "mu2": "0.5.3",
+        "swig": "0.4.0",
+        "Templ8": "0.2.1"
     },
     "main": "index",
     "engines": {
