@@ -19,6 +19,7 @@
         <h2>Template Languages <span>(alphabetical)</span></h2>
         <ol>
             <li><a href="http://coffeekup.org/">CoffeeKup</a></li>
+            <li><a href="http://akdubya.github.com/dustjs/">Dust</a></li>
             <li><a href="https://github.com/visionmedia/ejs">EJS</a></li>
             <li><a href="https://github.com/visionmedia/haml.js">Haml.js</a></li>
             <li><a href="http://jade-lang.com/">Jade</a></li>
@@ -38,6 +39,7 @@
                 <tr>
                     <th></th>
                     <th scope="col">CoffeeKup</th>
+                    <th scope="col">Dust</th>
                     <th scope="col">EJS</th>
                     <th scope="col">Haml.js</th>
                     <th scope="col">Jade</th>
@@ -51,6 +53,7 @@
                 <tr>
                     <th scope="row">Express Support</th>
                     <td><span class="yes">✔</span></td>
+                    <td><a class="partial" href="#dust-express">✜</a></td>
                     <td><span class="yes">✔</span></td>
                     <td><span class="yes">✔</span></td>
                     <td><span class="yes">✔</span></td>
@@ -61,6 +64,7 @@
                 </tr>
                 <tr>
                     <th scope="row">Browser Support</th>
+                    <td><span class="yes">✔</span></td>
                     <td><span class="yes">✔</span></td>
                     <td><span class="no">✖</span></td>
                     <td><span class="yes">✔</span></td>
@@ -80,10 +84,12 @@
                     <td><span class="yes">✔</span></td>
                     <td><span class="yes">✔</span></td>
                     <td><span class="yes">✔</span></td>
+                    <td><span class="yes">✔</span></td>
                 </tr>
                 <tr>
                     <th scope="row">Variable Filters</th>
                     <td><span class="no">✖</span></td>
+                    <td><span class="yes">✔</span></td>
                     <td><span class="yes">✔</span></td>
                     <td><span class="no">✖</span></td>
                     <td><span class="no">✖</span></td>
@@ -112,10 +118,12 @@
                     <td><span class="yes">✔</span></td>
                     <td><span class="yes">✔</span></td>
                     <td><span class="yes">✔</span></td>
+                    <td><span class="yes">✔</span></td>
                     <td><span class="no">✖</span></td>
                 </tr>
                 <tr>
                     <th scope="row">Iteration</th>
+                    <td><span class="yes">✔</span></td>
                     <td><span class="yes">✔</span></td>
                     <td><span class="yes">✔</span></td>
                     <td><span class="yes">✔</span></td>
@@ -132,6 +140,7 @@
                     <td><span class="yes">✔</span></td>
                     <td><span class="yes">✔</span></td>
                     <td><span class="yes">✔</span></td>
+                    <td><span class="yes">✔</span></td>
                     <td><a class="partial" href="#mu-ifelse">✜</a></td>
                     <td><span class="yes">✔</span></td>
                     <td><span class="yes">✔</span></td>
@@ -139,6 +148,7 @@
                 <tr>
                     <th scope="row"><code>else if</code> Conditionals</th>
                     <td><span class="yes">✔</span></td>
+                    <td><span class="no">✖</span></td>
                     <td><span class="yes">✔</span></td>
                     <td><span class="no">✖</span></td>
                     <td><span class="yes">✔</span></td>
@@ -149,6 +159,7 @@
                 </tr>
                 <tr>
                     <th scope="row">Extendable Tags, Logic, and/or Filters</th>
+                    <td><span class="yes">✔</span></td>
                     <td><span class="yes">✔</span></td>
                     <td><span class="no">✖</span></td>
                     <td><span class="no">✖</span></td>
@@ -168,27 +179,32 @@
                     <td><span class="yes">✔</span></td>
                     <td><span class="yes">✔</span></td>
                     <td><span class="yes">✔</span></td>
+                    <td><span class="yes">✔</span></td>
                 </tr>
             </tbody>
             <tfoot>
                 <tr>
-                    <th colspan="9">Footnotes</th>
+                    <th colspan="10">Footnotes</th>
+                </tr>
+                <tr id="dust-express">
+                    <th><span class="partial">✜ Dust Express Support</span></th>
+                    <td colspan="9">Dust can be supported in Express via <a href="https://github.com/davglass/express-dust">express-dust</a></td>
                 </tr>
                 <tr id="jqtpl-browser">
                     <th><span class="partial">✜ JQTpl Browser Support</span></th>
-                    <td colspan="8">JQTpl can be supported in the browser via the <a href="https://github.com/jquery/jquery-tmpl">jQuery Templates plugin</a></td>
+                    <td colspan="9">JQTpl can be supported in the browser via the <a href="https://github.com/jquery/jquery-tmpl">jQuery Templates plugin</a></td>
                 </tr>
                 <tr id="mu-browser">
                     <th><span class="partial">✜ Mu Browser Support</span></th>
-                    <td colspan="8">Mu2/Mustache can be supported in the browser via <a href="https://github.com/janl/mustache.js">mustache.js</a>.</td>
+                    <td colspan="9">Mu2/Mustache can be supported in the browser via <a href="https://github.com/janl/mustache.js">mustache.js</a>.</td>
                 </tr>
                 <tr id="mu-ifelse">
                     <th><span class="partial">✜ Mu <code>if / else</code></span></th>
-                    <td colspan="8">Mu2/Mustache only supports <code>if</code> logic.</td>
+                    <td colspan="9">Mu2/Mustache only supports <code>if</code> logic.</td>
                 </tr>
                 <tr id="partials">
                     <th><span class="partial">✜ Partials</span></th>
-                    <td colspan="8">Language has some way to include and render sub-templates from within the main template.</td>
+                    <td colspan="9">Language has some way to include and render sub-templates from within the main template.</td>
                 </tr>
             </tfoot>
         </table>
@@ -209,107 +225,120 @@
             <tbody>
                 <tr>
                     <th scope="row">Swig</th>
-                    <td class="mean" value="84.52902652902654">84.52</td>
-                    <td value="88.31168831168831">88.31</td>
-                    <td value="97.1048951048951">97.10</td>
-                    <td value="93.25374625374626">93.25</td>
-                    <td value="96.76123876123876">96.76</td>
-                    <td value="74.39460539460539">74.39</td>
-                    <td value="70.51648351648352">70.51</td>
-                    <td value="64.7052947052947">64.70</td>
-                    <td value="78.95904095904096">78.95</td>
-                    <td value="96.75424575424576">96.75</td>
+                    <td class="mean" value="86.16106116106116">86.16</td>
+                    <td value="90.84415584415585">90.84</td>
+                    <td value="95.16483516483517">95.16</td>
+                    <td value="90.46153846153847">90.46</td>
+                    <td value="93.39260739260739">93.39</td>
+                    <td value="93.94105894105894">93.94</td>
+                    <td value="59.395604395604394">59.39</td>
+                    <td value="75.66033966033966">75.66</td>
+                    <td value="89.61338661338661">89.61</td>
+                    <td value="86.97602397602398">86.97</td>
                 </tr>
                 <tr>
                     <th scope="row">JQTpl</th>
-                    <td class="mean" value="54.25707625707625">54.25</td>
-                    <td value="58.56843156843157">58.56</td>
-                    <td value="54.99100899100899">54.99</td>
-                    <td value="57.94805194805195">57.94</td>
-                    <td value="58.264735264735265">58.26</td>
-                    <td value="59.03396603396603">59.03</td>
-                    <td value="53.2027972027972">53.20</td>
-                    <td value="35.79220779220779">35.79</td>
-                    <td value="57.15684315684316">57.15</td>
-                    <td value="53.35564435564436">53.35</td>
+                    <td class="mean" value="55.96982102864456">55.96</td>
+                    <td value="53.12787212787213">53.12</td>
+                    <td value="59.79220779220779">59.79</td>
+                    <td value="59.137862137862136">59.13</td>
+                    <td value="56.30769230769231">56.30</td>
+                    <td value="56.66833166833167">56.66</td>
+                    <td value="59.3976023976024">59.39</td>
+                    <td value="60.53946053946054">60.53</td>
+                    <td value="43.79831932773109">43.79</td>
+                    <td value="54.95904095904096">54.95</td>
                 </tr>
                 <tr>
                     <th scope="row">Haml.js</th>
-                    <td class="mean" value="3.2187812187812184">3.21</td>
-                    <td value="3.3136863136863135">3.31</td>
-                    <td value="3.3306693306693305">3.33</td>
-                    <td value="2.8341658341658342">2.83</td>
-                    <td value="3.3536463536463534">3.35</td>
-                    <td value="3.2057942057942057">3.20</td>
-                    <td value="3.3366633366633365">3.33</td>
-                    <td value="3.241758241758242">3.24</td>
-                    <td value="3.2617382617382615">3.26</td>
-                    <td value="3.090909090909091">3.09</td>
+                    <td class="mean" value="3.076368076368076">3.07</td>
+                    <td value="3.2817182817182817">3.28</td>
+                    <td value="3.001998001998002">3.00</td>
+                    <td value="3.3566433566433567">3.35</td>
+                    <td value="3.305694305694306">3.30</td>
+                    <td value="3.2817182817182817">3.28</td>
+                    <td value="2.4955044955044956">2.49</td>
+                    <td value="2.955044955044955">2.95</td>
+                    <td value="3.3086913086913086">3.30</td>
+                    <td value="2.7002997002997002">2.70</td>
                 </tr>
                 <tr>
                     <th scope="row">EJS</th>
-                    <td class="mean" value="2.5943807654333972">2.59</td>
-                    <td value="2.659340659340659">2.65</td>
-                    <td value="2.7952047952047954">2.79</td>
-                    <td value="2.652347652347652">2.65</td>
-                    <td value="2.6193806193806193">2.61</td>
-                    <td value="2.6393606393606395">2.63</td>
-                    <td value="2.68609022556391">2.68</td>
-                    <td value="2.775224775224775">2.77</td>
-                    <td value="2.5204795204795203">2.52</td>
-                    <td value="2.001998001998002">2.00</td>
+                    <td class="mean" value="2.643907028065444">2.64</td>
+                    <td value="2.6793206793206794">2.67</td>
+                    <td value="2.6712871287128714">2.67</td>
+                    <td value="2.7672327672327675">2.76</td>
+                    <td value="2.6113886113886116">2.61</td>
+                    <td value="2.25974025974026">2.25</td>
+                    <td value="2.583416583416583">2.58</td>
+                    <td value="2.7002997002997002">2.70</td>
+                    <td value="2.757242757242757">2.75</td>
+                    <td value="2.7652347652347653">2.76</td>
                 </tr>
                 <tr>
                     <th scope="row">Templ8</th>
-                    <td class="mean" value="1.9098207269743557">1.90</td>
-                    <td value="1.922077922077922">1.92</td>
-                    <td value="1.875124875124875">1.87</td>
-                    <td value="1.91008991008991">1.91</td>
-                    <td value="1.94005994005994">1.94</td>
-                    <td value="2.002997002997003">2.00</td>
-                    <td value="1.823751178133836">1.82</td>
-                    <td value="1.7412587412587412">1.74</td>
-                    <td value="2.014985014985015">2.01</td>
-                    <td value="1.9580419580419581">1.95</td>
+                    <td class="mean" value="1.886059452390651">1.88</td>
+                    <td value="2.003996003996004">2.00</td>
+                    <td value="1.957042957042957">1.95</td>
+                    <td value="2.024975024975025">2.02</td>
+                    <td value="1.8831168831168832">1.88</td>
+                    <td value="1.893106893106893">1.89</td>
+                    <td value="1.942057942057942">1.94</td>
+                    <td value="1.353156450137237">1.35</td>
+                    <td value="1.861138861138861">1.86</td>
+                    <td value="2.055944055944056">2.05</td>
                 </tr>
                 <tr>
                     <th scope="row">Jade</th>
-                    <td class="mean" value="1.3878041322675054">1.38</td>
-                    <td value="1.4265734265734267">1.42</td>
-                    <td value="1.4495504495504496">1.44</td>
-                    <td value="1.4055944055944056">1.40</td>
-                    <td value="1.2197802197802199">1.21</td>
-                    <td value="1.4775224775224776">1.47</td>
-                    <td value="1.5394605394605394">1.53</td>
-                    <td value="1.3736263736263736">1.37</td>
-                    <td value="1.1056218057921636">1.10</td>
-                    <td value="1.4925074925074926">1.49</td>
+                    <td class="mean" value="1.3024120582260117">1.30</td>
+                    <td value="1.4125874125874125">1.41</td>
+                    <td value="1.4635364635364636">1.46</td>
+                    <td value="1.1608391608391608">1.16</td>
+                    <td value="1.4685314685314685">1.46</td>
+                    <td value="1.4175824175824177">1.41</td>
+                    <td value="1.3586413586413586">1.35</td>
+                    <td value="1.101328903654485">1.10</td>
+                    <td value="1.3466533466533466">1.34</td>
+                    <td value="0.9920079920079921">0.99</td>
                 </tr>
                 <tr>
                     <th scope="row">Mu2</th>
-                    <td class="mean" value="0.8485487914624046">0.84</td>
-                    <td value="0.8501498501498501">0.85</td>
-                    <td value="0.9340659340659341">0.93</td>
-                    <td value="0.9118217054263565">0.91</td>
-                    <td value="0.9020979020979021">0.90</td>
-                    <td value="0.9300699300699301">0.93</td>
-                    <td value="0.6321499013806706">0.63</td>
-                    <td value="0.9070929070929071">0.90</td>
-                    <td value="0.8961038961038961">0.89</td>
-                    <td value="0.6733870967741935">0.67</td>
+                    <td class="mean" value="0.8877788877788879">0.88</td>
+                    <td value="0.9500499500499501">0.95</td>
+                    <td value="0.9310689310689311">0.93</td>
+                    <td value="0.949050949050949">0.94</td>
+                    <td value="0.6333666333666333">0.63</td>
+                    <td value="0.8411588411588412">0.84</td>
+                    <td value="0.9230769230769231">0.92</td>
+                    <td value="0.9250749250749251">0.92</td>
+                    <td value="0.9120879120879121">0.91</td>
+                    <td value="0.9250749250749251">0.92</td>
+                </tr>
+                <tr>
+                    <th scope="row">Dust</th>
+                    <td class="mean" value="0.6217817243030201">0.62</td>
+                    <td value="0.6833166833166833">0.68</td>
+                    <td value="0.6493506493506493">0.64</td>
+                    <td value="0.6353754940711462">0.63</td>
+                    <td value="0.6233766233766234">0.62</td>
+                    <td value="0.6134215500945179">0.61</td>
+                    <td value="0.6293706293706294">0.62</td>
+                    <td value="0.647410358565737">0.64</td>
+                    <td value="0.4720558882235529">0.47</td>
+                    <td value="0.6423576423576424">0.64</td>
                 </tr>
                 <tr>
                     <th scope="row">CoffeeKup</th>
-                    <td class="mean" value="0.3923617109153592">0.39</td>
-                    <td value="0.3806193806193806">0.38</td>
-                    <td value="0.41317365269461076">0.41</td>
-                    <td value="0.39143426294820716">0.39</td>
-                    <td value="0.3776223776223776">0.37</td>
-                    <td value="0.40239043824701193">0.40</td>
-                    <td value="0.42657342657342656">0.42</td>
-                    <td value="0.37188434695912265">0.37</td>
-                    <td value="0.39421157684630737">0.39</td>
-                    <td value="0.3733459357277883">0.37</td>
+                    <td class="mean" value="0.37203737253789426">0.37</td>
+                    <td value="0.39544103072348863">0.39</td>
+                    <td value="0.4075924075924076">0.40</td>
+                    <td value="0.4187437686939183">0.41</td>
+                    <td value="0.3063872255489022">0.30</td>
+                    <td value="0.38922155688622756">0.38</td>
+                    <td value="0.37962037962037964">0.37</td>
+                    <td value="0.36826347305389223">0.36</td>
+                    <td value="0.34807149576669805">0.34</td>
+                    <td value="0.3349950149551346">0.33</td>
                 </tr>
             </tbody>
             <tfoot>
@@ -323,15 +352,15 @@
                 <tr>
                     <td colspan="3" rowspan="2">Swig</td>
                     <td colspan="2">JQTpl (next fastest)</td>
-                    <td colspan="2">35.81%</td>
-                    <td colspan="2">1.56</td>
-                    <td colspan="2">0.1</td>
+                    <td colspan="2">35.04%</td>
+                    <td colspan="2">1.54</td>
+                    <td colspan="2">0.19</td>
                 </tr>
                 <tr>
                     <td colspan="2">CoffeeKup (slowest)</td>
-                    <td colspan="2">99.54%</td>
-                    <td colspan="2">215.44</td>
-                    <td colspan="2">2.33</td>
+                    <td colspan="2">99.57%</td>
+                    <td colspan="2">231.59</td>
+                    <td colspan="2">2.36</td>
                 </tr>
             </tfoot>
         </table>

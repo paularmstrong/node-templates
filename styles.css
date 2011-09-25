@@ -141,7 +141,7 @@ table td,
 table th {
 	padding: 5px;
 	border: 2px solid #222;
-	min-width: 80px;
+	min-width: 60px;
 }
 table tr:nth-child(even) {
 	background-color: rgba(50,50,50,0.2);
