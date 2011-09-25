@@ -11,6 +11,7 @@ html,
 body {
 	background: #222;
 	max-width: 984px;
+	text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
 }
 
 body {
@@ -29,30 +30,148 @@ h4 { font-size: 22px; line-height: 1.4em; }
 h5 { font-size: 18px; line-height: 1.4em; }
 h6 { font-size: 16px; line-height: 1.4em; }
 
+a,
+a:link {
+    color: #527DF6;
+    -webkit-transition: all 0.3s;
+    padding: 2px;
+    margin: -2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+}
+    a:visited {
+        color: #645cf6;
+    }
+    a:hover {
+        background: #527DF6;
+        color: #DDD;
+    }
+
 table {
 	width: 100%;
 }
 table thead {
-	background: #333;
+	background-color: rgba(50,50,50,0.6);
 }
 table thead th {
 	padding: 20px 5px 0;
 	font-family: 'Lato', sans-serif;
+	text-align: center;
 }
 table td,
 table th {
 	padding: 5px;
+	border: 2px solid #222;
+	min-width: 80px;
 }
 table tr:nth-child(even) {
-	background-color: rgba(50,50,50,0.5);
+	background-color: rgba(50,50,50,0.2);
 }
 table tr td:nth-child(even),
 table tr th:nth-child(even) {
-	background-color: rgba(50,50,50,0.5);
+	background-color: rgba(50,50,50,0.2);
 }
-table tr:hover {
-	background-color: rgba(255,255,255,0.3);
+table tbody tr:hover {
+	background-color: rgba(255,255,255,0.1);
+}
+table tbody tr th:first-child {
+    text-align: right;
+}
+    table tbody .no,
+    table tbody .yes,
+    table tbody .partial {
+        display: block;
+        text-align: center;
+    }
+table tfoot td {
+    font-size: 11px;
 }
 
-span.no { color: #D00; }
-span.yes { color: #0B0; }
+.no { color: #D00; }
+.yes { color: #0B0; }
+.partial { color: #F70; }
+    a.partial {
+        color: #F70;
+    }
+        a.partial:hover {
+            background: #F70;
+            color: #DDD;
+        }
+
+#github {
+    right: -65px;
+    height: 30px;
+    top: 50px;
+    position: fixed;
+    text-decoration: none;
+    width: 250px;
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg)
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    transition: none;
+    color: #527DF6;
+    font-weight: bold;
+    text-shadow: -1px 1px 1px rgba(0,0,0,0.7);
+}
+    #github:hover {
+        background: none;
+    }
+#github span {
+    background: #DDD;
+    font-size: 14px;
+    left: 0;
+    padding: 5px 0;
+    position: absolute;
+    text-align: center;
+    width: 250px;
+    -webkit-box-shadow: -1px 1px 5px rgba(0,0,0,1);
+    -moz-box-shadow: -1px 1px 5px rgba(0,0,0,1);
+    -ms-box-shadow: -1px 1px 5px rgba(0,0,0,1);
+    -o-box-shadow: -1px 1px 5px rgba(0,0,0,1);
+    box-shadow: -1px 1px 5px rgba(0,0,0,1);
+    -webkit-transition-property: opacity;
+    -moz-transition-property: opacity;
+    -ms-transition-property: opacity;
+    -o-transition-property: opacity;
+    transition-property: opacity;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -ms-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+    #github span:last-child {
+        background: #527DF6;
+        opacity: 0;
+        color: #DDD;
+    }
+    #github:hover span:first-child {
+        opacity: 0;
+    }
+    #github:hover span:last-child {
+        opacity: 1;
+    }
+@media all and (-webkit-transform-3d) {
+    #github span {
+        opacity: 1 !important;
+        -webkit-backface-visibility: hidden;
+        -webkit-transition: -webkit-transform 0.5s;
+    }
+    #github span:last-child {
+        -webkit-transform: rotateX(180deg);
+    }
+    #github:hover span:first-child {
+        -webkit-transform: rotateX(180deg);
+    }
+    #github:hover span:last-child {
+        -webkit-transform: rotateX(360deg);
+    }
+}

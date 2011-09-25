@@ -10,21 +10,33 @@
 
     <header>
         <h1>Node Templates</h1>
+
+        <a id="github" href="https://github.com/paularmstrong/node-templates"><span>Fork me on GitHub!</span> <span>Feel awesome!</span></a>
     </header>
 
     <section>
+        <ul>
+            <li><a href="http://coffeekup.org/">CoffeeKup</a></li>
+            <li><a href="https://github.com/visionmedia/ejs">EJS</a></li>
+            <li><a href="https://github.com/visionmedia/haml.js">Haml.js</a></li>
+            <li><a href="http://jade-lang.com/">Jade</a></li>
+            <li><a href="https://github.com/kof/node-jqtpl">JQTpl</a></li>
+            <li><a href="https://github.com/paularmstrong/swig">Swig</a></li>
+            <li><a href="https://github.com/constantology/Templ8">Templ8</a></li>
+        </ul>
+
         <table>
             <caption>Feature Comparison</caption>
             <thead>
                 <tr>
                     <th></th>
-                    <th>CoffeeKup</th>
-                    <th>EJS</th>
-                    <th>Haml.js</th>
-                    <th>Jade</th>
-                    <th>JQTpl</th>
-                    <th>Swig</th>
-                    <th>Templ8</th>
+                    <th scope="col">CoffeeKup</th>
+                    <th scope="col">EJS</th>
+                    <th scope="col">Haml.js</th>
+                    <th scope="col">Jade</th>
+                    <th scope="col">JQTpl</th>
+                    <th scope="col">Swig</th>
+                    <th scope="col">Templ8</th>
                 </tr>
             </thead>
             <tbody>
@@ -39,6 +51,16 @@
                     <td><span class="yes">✔</span></td>
                 </tr>
                 <tr>
+                    <th scope="row">Browser Support</th>
+                    <td><span class="yes">✔</span></td>
+                    <td><span class="no">✖</span></td>
+                    <td><span class="yes">✔</span></td>
+                    <td><span class="yes">✔</span></td>
+                    <td><a class="partial" href="#jqtpl-browser">✜</a></td>
+                    <td><span class="no">✖</span></td>
+                    <td><span class="yes">✔</span></td>
+                </tr>
+                <tr>
                     <th scope="row">Variable Filters</th>
                     <td><span class="no">✖</span></td>
                     <td><span class="no">✖</span></td>
@@ -46,9 +68,14 @@
                     <td><span class="no">✖</span></td>
                     <td><span class="no">✖</span></td>
                     <td><span class="yes">✔</span></td>
-                    <td><span class="no">✖</span></td>
+                    <td><span class="yes">✔</span></td>
                 </tr>
             </tbody>
+            <tfoot>
+                <tr id="jqtpl-browser">
+                    <td colspan="8"><span class="partial">✜</span> JQTpl can be supported in the browser via the <a href="https://github.com/jquery/jquery-tmpl">jQuery Templates plugin</a></td>
+                </tr>
+            </tfoot>
         </table>
     </section>
 
