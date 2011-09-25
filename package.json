@@ -3,7 +3,8 @@
     "version": "0.0.1",
     "description": "Comparison of Node.js template languages.",
     "keywords": ["template", "benchmark"],
-    "repository": "",
+    "repository": "https://github.com/paularmstrong/node-templates.git",
+    "homepage": "http://paularmstrong.github.com/node-templates/",
     "author": "Paul Armstrong <paul@paularmstrongdesigns.com>",
     "dependencies": {
         "swig": "0.4.0",
