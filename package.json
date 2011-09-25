@@ -8,12 +8,12 @@
     "author": "Paul Armstrong <paul@paularmstrongdesigns.com>",
     "dependencies": {
         "swig": "0.4.0",
-        "mu": "0.5.2",
         "ejs": "0.4.2",
         "jade": "0.15.4",
         "coffeekup": "0.3.0",
         "hamljs": "0.5.1",
         "jqtpl": "1.0.6",
+        "mu2": "0.5.3",
         "Templ8": "0.2.1",
         "nopt": ">=1.0.8",
         "bench": ">=0.3.2",

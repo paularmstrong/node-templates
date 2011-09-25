@@ -31,20 +31,21 @@ exports.compare = (function () {
     _.each(langs, function (lang, key) {
         switch (parsed.type) {
         case 'compile':
-            cases[key + ' compile'] = function () {
-                lang.compile(templateType);
+            cases[key + ' compile'] = function (callback) {
+                lang.compile(templateType, callback);
             };
             break;
         case 'render':
             lang.compile(templateType);
-            cases[key + ' render'] = function () {
-                lang.render(templateType);
+            cases[key + ' render'] = function (callback) {
+                lang.render(templateType, callback);
             };
             break;
         default:
-            cases[key + ' complete'] = function () {
-                lang.compile(templateType);
-                lang.render(templateType);
+            cases[key + ' complete'] = function (callback) {
+                lang.compile(templateType, function () {
+                    lang.render(templateType, callback);
+                });
             };
             break;
         }

@@ -15,6 +15,7 @@ View all feature comparisons and templates on the [Node Templates Page](http://p
 * [HamlJS@0.5.1](https://github.com/visionmedia/haml.js)
 * [Jade@0.15.4](http://jade-lang.com/)
 * [jqtpl@1.0.6](https://github.com/kof/node-jqtpl)
+* [mu2@0.5.3](https://github.com/raycmorgan/Mu)
 * [swig@0.4.0](https://github.com/paularmstrong/swig)
 * [Templ8@0.2.1](https://github.com/constantology/Templ8)
 
