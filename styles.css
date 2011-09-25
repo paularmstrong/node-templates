@@ -127,6 +127,10 @@ table tbody tr th:first-child {
         display: block;
         text-align: center;
     }
+table tfoot th {
+    font-size: 11px;
+    text-align: right;
+}
 table tfoot td {
     font-size: 11px;
 }
@@ -162,6 +166,9 @@ table tfoot tr:first-child td {
             background: #F70;
             color: #DDD;
         }
+    table tbody sup .no,
+    table tbody sup .yes,
+    table tbody sup .partial { display: inline; }
 
 #github {
     right: -65px;

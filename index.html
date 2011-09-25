@@ -79,7 +79,7 @@
                 <tr>
                     <th scope="row">Variable Filters</th>
                     <td><span class="no">✖</span></td>
-                    <td><span class="no">✖</span></td>
+                    <td><span class="yes">✔</span></td>
                     <td><span class="no">✖</span></td>
                     <td><span class="no">✖</span></td>
                     <td><span class="no">✖</span></td>
@@ -116,10 +116,28 @@
                     <td><span class="yes">✔</span></td>
                     <td><span class="yes">✔</span></td>
                 </tr>
+                <tr>
+                    <th scope="row">Partials / Includes<sup><a class="partial" href="#partials">✜</a></sup></th>
+                    <td><span class="yes">✔</span></td>
+                    <td><span class="yes">✔</span></td>
+                    <td><span class="yes">✔</span></td>
+                    <td><span class="yes">✔</span></td>
+                    <td><span class="yes">✔</span></td>
+                    <td><span class="yes">✔</span></td>
+                    <td><span class="yes">✔</span></td>
+                </tr>
             </tbody>
             <tfoot>
+                <tr>
+                    <th colspan="8">Footnotes</th>
+                </tr>
                 <tr id="jqtpl-browser">
-                    <td colspan="8"><span class="partial">✜</span> JQTpl can be supported in the browser via the <a href="https://github.com/jquery/jquery-tmpl">jQuery Templates plugin</a></td>
+                    <th><span class="partial">✜ JQTpl Browser Suppor:</span></th>
+                    <td colspan="7">JQTpl can be supported in the browser via the <a href="https://github.com/jquery/jquery-tmpl">jQuery Templates plugin</a></td>
+                </tr>
+                <tr id="#partials">
+                    <th><span class="partial">✜ Partials</span></th>
+                    <td colspan="7">Language has some way to include and render sub-templates from within the main template.</td>
                 </tr>
             </tfoot>
         </table>
