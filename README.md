@@ -2,6 +2,10 @@
 
 The goal of this project is to be a source of comparison for the many different templating libraries available for Node.js. By implementing templates in the most similar manner possible, we can get fairly accurate benchmarks between compile and render steps of various template libraries.
 
+# Feature Comparisons and Benchmarks
+
+View all feature comparisons and templates on the [Node Templates Page](http://paularmstrong.github.com/node-templates/).
+
 ## Implemented Libraries
 
 (_Alphabetical Order_)
