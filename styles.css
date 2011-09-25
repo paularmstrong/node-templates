@@ -166,6 +166,9 @@ table tfoot th {
     font-size: 11px;
     text-align: right;
 }
+    table tfoot tr:first-child th {
+        text-align: left;
+    }
 table tfoot td {
     font-size: 11px;
 }
