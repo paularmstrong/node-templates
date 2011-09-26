@@ -1,10 +1,12 @@
 <!doctype html>
 <html>
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <title>Node Templates</title>
 
-    <link rel="stylesheet" href="styles.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="styles.css" type="text/css" media="all">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
 </head>
 <body>
 
@@ -34,10 +36,10 @@
     <section>
         <h2>Feature Comparisons</h2>
 
-        <table>
+        <table id="features">
             <thead>
                 <tr>
-                    <th></th>
+                    <th>(click to toggle)</th>
                     <th scope="col">CoffeeKup</th>
                     <th scope="col">Dust</th>
                     <th scope="col">EJS</th>
@@ -226,120 +228,120 @@
             <tbody>
                 <tr>
                     <th scope="row">Swig</th>
-                    <td class="mean" value="86.16106116106116">86.16</td>
-                    <td value="90.84415584415585">90.84</td>
-                    <td value="95.16483516483517">95.16</td>
-                    <td value="90.46153846153847">90.46</td>
-                    <td value="93.39260739260739">93.39</td>
-                    <td value="93.94105894105894">93.94</td>
-                    <td value="59.395604395604394">59.39</td>
-                    <td value="75.66033966033966">75.66</td>
-                    <td value="89.61338661338661">89.61</td>
-                    <td value="86.97602397602398">86.97</td>
+                    <td class="mean" title="86.16106116106116">86.16</td>
+                    <td title="90.84415584415585">90.84</td>
+                    <td title="95.16483516483517">95.16</td>
+                    <td title="90.46153846153847">90.46</td>
+                    <td title="93.39260739260739">93.39</td>
+                    <td title="93.94105894105894">93.94</td>
+                    <td title="59.395604395604394">59.39</td>
+                    <td title="75.66033966033966">75.66</td>
+                    <td title="89.61338661338661">89.61</td>
+                    <td title="86.97602397602398">86.97</td>
                 </tr>
                 <tr>
                     <th scope="row">JQTpl</th>
-                    <td class="mean" value="55.96982102864456">55.96</td>
-                    <td value="53.12787212787213">53.12</td>
-                    <td value="59.79220779220779">59.79</td>
-                    <td value="59.137862137862136">59.13</td>
-                    <td value="56.30769230769231">56.30</td>
-                    <td value="56.66833166833167">56.66</td>
-                    <td value="59.3976023976024">59.39</td>
-                    <td value="60.53946053946054">60.53</td>
-                    <td value="43.79831932773109">43.79</td>
-                    <td value="54.95904095904096">54.95</td>
+                    <td class="mean" title="55.96982102864456">55.96</td>
+                    <td title="53.12787212787213">53.12</td>
+                    <td title="59.79220779220779">59.79</td>
+                    <td title="59.137862137862136">59.13</td>
+                    <td title="56.30769230769231">56.30</td>
+                    <td title="56.66833166833167">56.66</td>
+                    <td title="59.3976023976024">59.39</td>
+                    <td title="60.53946053946054">60.53</td>
+                    <td title="43.79831932773109">43.79</td>
+                    <td title="54.95904095904096">54.95</td>
                 </tr>
                 <tr>
                     <th scope="row">Haml.js</th>
-                    <td class="mean" value="3.076368076368076">3.07</td>
-                    <td value="3.2817182817182817">3.28</td>
-                    <td value="3.001998001998002">3.00</td>
-                    <td value="3.3566433566433567">3.35</td>
-                    <td value="3.305694305694306">3.30</td>
-                    <td value="3.2817182817182817">3.28</td>
-                    <td value="2.4955044955044956">2.49</td>
-                    <td value="2.955044955044955">2.95</td>
-                    <td value="3.3086913086913086">3.30</td>
-                    <td value="2.7002997002997002">2.70</td>
+                    <td class="mean" title="3.076368076368076">3.07</td>
+                    <td title="3.2817182817182817">3.28</td>
+                    <td title="3.001998001998002">3.00</td>
+                    <td title="3.3566433566433567">3.35</td>
+                    <td title="3.305694305694306">3.30</td>
+                    <td title="3.2817182817182817">3.28</td>
+                    <td title="2.4955044955044956">2.49</td>
+                    <td title="2.955044955044955">2.95</td>
+                    <td title="3.3086913086913086">3.30</td>
+                    <td title="2.7002997002997002">2.70</td>
                 </tr>
                 <tr>
                     <th scope="row">EJS</th>
-                    <td class="mean" value="2.643907028065444">2.64</td>
-                    <td value="2.6793206793206794">2.67</td>
-                    <td value="2.6712871287128714">2.67</td>
-                    <td value="2.7672327672327675">2.76</td>
-                    <td value="2.6113886113886116">2.61</td>
-                    <td value="2.25974025974026">2.25</td>
-                    <td value="2.583416583416583">2.58</td>
-                    <td value="2.7002997002997002">2.70</td>
-                    <td value="2.757242757242757">2.75</td>
-                    <td value="2.7652347652347653">2.76</td>
+                    <td class="mean" title="2.643907028065444">2.64</td>
+                    <td title="2.6793206793206794">2.67</td>
+                    <td title="2.6712871287128714">2.67</td>
+                    <td title="2.7672327672327675">2.76</td>
+                    <td title="2.6113886113886116">2.61</td>
+                    <td title="2.25974025974026">2.25</td>
+                    <td title="2.583416583416583">2.58</td>
+                    <td title="2.7002997002997002">2.70</td>
+                    <td title="2.757242757242757">2.75</td>
+                    <td title="2.7652347652347653">2.76</td>
                 </tr>
                 <tr>
                     <th scope="row">Templ8</th>
-                    <td class="mean" value="1.886059452390651">1.88</td>
-                    <td value="2.003996003996004">2.00</td>
-                    <td value="1.957042957042957">1.95</td>
-                    <td value="2.024975024975025">2.02</td>
-                    <td value="1.8831168831168832">1.88</td>
-                    <td value="1.893106893106893">1.89</td>
-                    <td value="1.942057942057942">1.94</td>
-                    <td value="1.353156450137237">1.35</td>
-                    <td value="1.861138861138861">1.86</td>
-                    <td value="2.055944055944056">2.05</td>
+                    <td class="mean" title="1.886059452390651">1.88</td>
+                    <td title="2.003996003996004">2.00</td>
+                    <td title="1.957042957042957">1.95</td>
+                    <td title="2.024975024975025">2.02</td>
+                    <td title="1.8831168831168832">1.88</td>
+                    <td title="1.893106893106893">1.89</td>
+                    <td title="1.942057942057942">1.94</td>
+                    <td title="1.353156450137237">1.35</td>
+                    <td title="1.861138861138861">1.86</td>
+                    <td title="2.055944055944056">2.05</td>
                 </tr>
                 <tr>
                     <th scope="row">Jade</th>
-                    <td class="mean" value="1.3024120582260117">1.30</td>
-                    <td value="1.4125874125874125">1.41</td>
-                    <td value="1.4635364635364636">1.46</td>
-                    <td value="1.1608391608391608">1.16</td>
-                    <td value="1.4685314685314685">1.46</td>
-                    <td value="1.4175824175824177">1.41</td>
-                    <td value="1.3586413586413586">1.35</td>
-                    <td value="1.101328903654485">1.10</td>
-                    <td value="1.3466533466533466">1.34</td>
-                    <td value="0.9920079920079921">0.99</td>
+                    <td class="mean" title="1.3024120582260117">1.30</td>
+                    <td title="1.4125874125874125">1.41</td>
+                    <td title="1.4635364635364636">1.46</td>
+                    <td title="1.1608391608391608">1.16</td>
+                    <td title="1.4685314685314685">1.46</td>
+                    <td title="1.4175824175824177">1.41</td>
+                    <td title="1.3586413586413586">1.35</td>
+                    <td title="1.101328903654485">1.10</td>
+                    <td title="1.3466533466533466">1.34</td>
+                    <td title="0.9920079920079921">0.99</td>
                 </tr>
                 <tr>
                     <th scope="row">Mu2</th>
-                    <td class="mean" value="0.8877788877788879">0.88</td>
-                    <td value="0.9500499500499501">0.95</td>
-                    <td value="0.9310689310689311">0.93</td>
-                    <td value="0.949050949050949">0.94</td>
-                    <td value="0.6333666333666333">0.63</td>
-                    <td value="0.8411588411588412">0.84</td>
-                    <td value="0.9230769230769231">0.92</td>
-                    <td value="0.9250749250749251">0.92</td>
-                    <td value="0.9120879120879121">0.91</td>
-                    <td value="0.9250749250749251">0.92</td>
+                    <td class="mean" title="0.8877788877788879">0.88</td>
+                    <td title="0.9500499500499501">0.95</td>
+                    <td title="0.9310689310689311">0.93</td>
+                    <td title="0.949050949050949">0.94</td>
+                    <td title="0.6333666333666333">0.63</td>
+                    <td title="0.8411588411588412">0.84</td>
+                    <td title="0.9230769230769231">0.92</td>
+                    <td title="0.9250749250749251">0.92</td>
+                    <td title="0.9120879120879121">0.91</td>
+                    <td title="0.9250749250749251">0.92</td>
                 </tr>
                 <tr>
                     <th scope="row">Dust</th>
-                    <td class="mean" value="0.6217817243030201">0.62</td>
-                    <td value="0.6833166833166833">0.68</td>
-                    <td value="0.6493506493506493">0.64</td>
-                    <td value="0.6353754940711462">0.63</td>
-                    <td value="0.6233766233766234">0.62</td>
-                    <td value="0.6134215500945179">0.61</td>
-                    <td value="0.6293706293706294">0.62</td>
-                    <td value="0.647410358565737">0.64</td>
-                    <td value="0.4720558882235529">0.47</td>
-                    <td value="0.6423576423576424">0.64</td>
+                    <td class="mean" title="0.6217817243030201">0.62</td>
+                    <td title="0.6833166833166833">0.68</td>
+                    <td title="0.6493506493506493">0.64</td>
+                    <td title="0.6353754940711462">0.63</td>
+                    <td title="0.6233766233766234">0.62</td>
+                    <td title="0.6134215500945179">0.61</td>
+                    <td title="0.6293706293706294">0.62</td>
+                    <td title="0.647410358565737">0.64</td>
+                    <td title="0.4720558882235529">0.47</td>
+                    <td title="0.6423576423576424">0.64</td>
                 </tr>
                 <tr>
                     <th scope="row">CoffeeKup</th>
-                    <td class="mean" value="0.37203737253789426">0.37</td>
-                    <td value="0.39544103072348863">0.39</td>
-                    <td value="0.4075924075924076">0.40</td>
-                    <td value="0.4187437686939183">0.41</td>
-                    <td value="0.3063872255489022">0.30</td>
-                    <td value="0.38922155688622756">0.38</td>
-                    <td value="0.37962037962037964">0.37</td>
-                    <td value="0.36826347305389223">0.36</td>
-                    <td value="0.34807149576669805">0.34</td>
-                    <td value="0.3349950149551346">0.33</td>
+                    <td class="mean" title="0.37203737253789426">0.37</td>
+                    <td title="0.39544103072348863">0.39</td>
+                    <td title="0.4075924075924076">0.40</td>
+                    <td title="0.4187437686939183">0.41</td>
+                    <td title="0.3063872255489022">0.30</td>
+                    <td title="0.38922155688622756">0.38</td>
+                    <td title="0.37962037962037964">0.37</td>
+                    <td title="0.36826347305389223">0.36</td>
+                    <td title="0.34807149576669805">0.34</td>
+                    <td title="0.3349950149551346">0.33</td>
                 </tr>
             </tbody>
             <tfoot>
@@ -376,6 +378,30 @@
 
         <p>Created for the Node.js community by <a href="http://paularmstrongdesigns.com">Paul Armstrong</a>.</p>
     </footer>
+
+    <script>
+    $(document).ready(function () {
+        $('table#features tbody tr th:first-child').bind('click', function () {
+            var remove = [],
+                i = 0,
+                els = null,
+                row = $(this).parent('tr').toggleClass('selected').parent('tbody').find('.selected').each(function () {
+                    $(this).find('td').each(function (i) {
+                        if ($(this).has('span.no').length) {
+                            remove.push(i + 2);
+                        }
+                    });
+                });
+
+            $('table#features thead th, table#features tbody td').removeClass('nonmatch');
+            i = remove.length;
+            while (i) {
+                i -= 1;
+                els = $('table#features thead th:nth-child(' + remove[i] + '), table#features tbody td:nth-child(' + remove[i] + ')').addClass('nonmatch');
+            }
+        });
+    });
+    </script>
 
 </body>
 </html>
