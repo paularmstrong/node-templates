@@ -44,7 +44,7 @@ exports.compare = (function () {
             };
             break;
         case 'render':
-            lang.compile(templateType);
+            lang.compile(templateType, function () {});
             cases[key + ' render'] = function (callback) {
                 lang.render(templateType, callback);
             };
