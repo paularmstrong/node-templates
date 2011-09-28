@@ -43,6 +43,10 @@ How many times to run each test. Defaults to 8.
 If you'd like to contribute another library to this project, that'd be really awesome. Just to be fair, there are a few ground-rules:
 
 1. After cloning the repository, run `make` to install all dependencies and commit hooks. Your commits will automatically be required to pass JSLint.
-1. All libraries must be available via NPM.
+1. _Do not_ checkout or push to the `gh-pages` branch. Doing so on Github will create duplicate pages and hurt findability on search engines.
+1. All libraries must be available via the NPM package install.
 1. Add the library and specific version number (no fuzzy versions allowed) to `package.json`.
-1. Implement the template as closely as possible to all others provided. Shortcuts to do the same thing are _encouraged_, especially if they make the library compile and render steps faster.
+1. Implement the template as closely as possible to all others provided. Shortcuts and optimizations to do the same thing are _encouraged_, especially if they make the library compile and render steps faster.
+1. Add the new template engine to the features table of `index.html`.
+1. _Do not_ add new benchmarks to the `index.html` file. Implementation will be reviewed and a full benchmark run will be done.
+1. If you did all of that, you are really awesome.

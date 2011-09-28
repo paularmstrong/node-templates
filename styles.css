@@ -1,0 +1,309 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:900);
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,img,input,textarea,p,blockquote,table,th,td,a,abbr,address,caption,cite,code,dfn,em,strong,th,var,hr,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video,mark{margin:0;padding:0;background:transparent;border:0;border-collapse:collapse;border-spacing:0;line-height:inherit;font-style:inherit;font-weight:inherit;text-decoration:none;text-align:left;list-style:none;quotes:none;}
+article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary{display:block;}
+input:focus,a:focus,textarea:focus{outline:0;}
+blockquote:before,blockquote:after,q:before,q:after{content:'';}
+sup,sub{vertical-align:baseline;position:relative;top:-0.4em;}sub{top:0.4em;}
+html,body,textarea,legend{font:14px/1.4em Helvetica,Arial,Verdana,sans-serif;color:#EEE;}
+
+*::selection {
+    background-color: rgba(87,171,58,0.6);
+}
+*::-moz-selection {
+    background-color: rgba(87,171,58,0.6);
+}
+
+@-webkit-keyframes flash {
+    0% { background-color: transparent; }
+    100% { background-color: rgba(255,119,0,0.4); }
+}
+
+@-moz-keyframes flash {
+    0% { background-color: transparent; }
+    100% { background-color: rgba(255,119,0,0.4); }
+}
+
+*:target {
+    -webkit-animation-name: flash;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-iteration-count: 4;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-timing-function: ease-in-out;
+
+    -moz-animation-name: flash;
+    -moz-animation-duration: 0.5s;
+    -moz-animation-iteration-count: 4;
+    -moz-animation-direction: alternate;
+    -moz-animation-timing-function: ease-in-out;
+
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+html,
+body {
+	background-color: #222;
+	max-width: 1200px;
+	text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+body {
+	margin: 20px;
+}
+
+section {
+    margin: 0 0 48px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Lato', sans-serif;
+	text-shadow: 1px 1px 5px rgba(0,0,0,1);
+	margin: 0 0 0.2em;
+}
+
+h1 { font-size: 48px; line-height: 1.4em; }
+h2 { font-size: 28px; line-height: 1.4em; }
+h3 { font-size: 24px; line-height: 1.4em; }
+h4 { font-size: 22px; line-height: 1.4em; }
+h5 { font-size: 18px; line-height: 1.4em; }
+h6 { font-size: 16px; line-height: 1.4em; }
+
+h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
+    font-size: 0.5em;
+}
+
+em, i { font-style: italic; }
+strong, b { font-weight: bold; }
+
+p, ul, ol, dl, table {
+    margin: 0 0 24px;
+}
+    ul, ol, dl {
+        margin-left: 24px;
+    }
+        ul li { list-style-type: disc; }
+        ul li li { list-style-type: square; }
+        ul li li li { list-style-type: circle; }
+        ol li { list-style-type: decimal; }
+        ol li li { list-style-type: lower-latin; }
+        ol li li li { list-style-type: lower-roman; }
+    dt {
+        font-weight: bold;
+    }
+        dd + dt {
+            margin-top: 24px;
+        }
+
+code {
+    background-color: rgba(100,100,100,0.5);
+    padding: 2px;
+    margin: -2px;
+    font-family: Monaco, "Courier New", Courier, monospace;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+}
+
+a,
+a:link {
+    color: #527DF6;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    padding: 2px;
+    margin: -2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+}
+    a:hover {
+        background-color: #527DF6;
+        color: #DDD;
+    }
+
+table {
+	width: 100%;
+}
+table thead {
+	background-color: rgba(50,50,50,0.6);
+}
+table thead th {
+	padding: 20px 5px 0;
+	font-family: 'Lato', sans-serif;
+	text-align: center;
+}
+table td,
+table th {
+	padding: 5px;
+	border: 2px solid #222;
+	min-width: 60px;
+	-webkit-transition: opacity 0.3s;
+	-moz-transition: opacity 0.3s;
+	-ms-transition: opacity 0.3s;
+	-o-transition: opacity 0.3s;
+	transition: opacity 0.3s;
+}
+table tr:nth-child(even) {
+	background-color: rgba(50,50,50,0.2);
+}
+table tr td:nth-child(even),
+table tr th:nth-child(even) {
+	background-color: rgba(50,50,50,0.2);
+}
+    table tr th.nonmatch,
+    table tr td.nonmatch {
+        opacity: 0.2;
+    }
+table tbody tr:hover {
+	background-color: rgba(255,255,255,0.1);
+}
+    table tbody tr.selected th {
+        background-color: #3A57AB;
+    }
+table tbody tr th:first-child {
+    text-align: right;
+    cursor: pointer;
+}
+    table tbody .no,
+    table tbody .yes,
+    table tbody .partial {
+        display: block;
+        text-align: center;
+    }
+table tfoot th {
+    font-size: 11px;
+    text-align: right;
+}
+    table tfoot tr:first-child th {
+        text-align: left;
+    }
+table tfoot td {
+    font-size: 11px;
+}
+
+td[title]:hover:after {
+    margin: 0 0 0 5px;
+    padding: 0 0.2em;
+    content: attr(title);
+    font-size: 0.8em;
+    position: absolute;
+    background-color: #DDD;
+    color: #222;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+    text-shadow: none;
+    -webkit-box-shadow: 1px 1px 2px #000;
+    -moz-box-shadow: 1px 1px 2px #000;
+    -ms-box-shadow: 1px 1px 2px #000;
+    -o-box-shadow: 1px 1px 2px #000;
+    box-shadow: 1px 1px 2px #000;
+}
+
+table tfoot tr:first-child th,
+table tfoot tr:first-child td {
+    padding-top: 20px;
+	background-color: rgba(50,50,50,0.6);
+}
+    table tfoot tr:nth-child(even) {
+        background-color: none;
+    }
+
+.no { color: #D00; }
+.yes { color: #0B0; }
+.partial { color: #F70; }
+    a.partial {
+        color: #F70;
+    }
+        a.partial:hover {
+            background-color: #F70;
+            color: #DDD;
+        }
+    table tbody sup .no,
+    table tbody sup .yes,
+    table tbody sup .partial { display: inline; }
+
+#github {
+    right: -65px;
+    height: 30px;
+    top: 50px;
+    position: fixed;
+    text-decoration: none;
+    width: 250px;
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg)
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    transition: none;
+    color: #527DF6;
+    font-weight: bold;
+    text-shadow: -1px 1px 1px rgba(0,0,0,0.7);
+}
+    #github:hover {
+        background: none;
+    }
+#github span {
+    background-color: #DDD;
+    font-size: 14px;
+    left: 0;
+    padding: 5px 0;
+    position: absolute;
+    text-align: center;
+    width: 250px;
+    -webkit-box-shadow: -1px 1px 5px rgba(0,0,0,1);
+    -moz-box-shadow: -1px 1px 5px rgba(0,0,0,1);
+    -ms-box-shadow: -1px 1px 5px rgba(0,0,0,1);
+    -o-box-shadow: -1px 1px 5px rgba(0,0,0,1);
+    box-shadow: -1px 1px 5px rgba(0,0,0,1);
+    -webkit-transition-property: opacity;
+    -moz-transition-property: opacity;
+    -ms-transition-property: opacity;
+    -o-transition-property: opacity;
+    transition-property: opacity;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -ms-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+    #github span:last-child {
+        background-color: #527DF6;
+        opacity: 0;
+        color: #DDD;
+    }
+    #github:hover span:first-child {
+        opacity: 0;
+    }
+    #github:hover span:last-child {
+        opacity: 1;
+    }
+@media all and (-webkit-transform-3d) {
+    #github span {
+        opacity: 1 !important;
+        -webkit-backface-visibility: hidden;
+        -webkit-transition: -webkit-transform 0.5s;
+    }
+    #github span:last-child {
+        -webkit-transform: rotateX(180deg);
+    }
+    #github:hover span:first-child {
+        -webkit-transform: rotateX(180deg);
+    }
+    #github:hover span:last-child {
+        -webkit-transform: rotateX(360deg);
+    }
+}
