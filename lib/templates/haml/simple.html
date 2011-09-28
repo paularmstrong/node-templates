@@ -1,0 +1,18 @@
+%h1!= header
+- if(items.length){
+%ul
+  - for(key in items){
+    item = items[key]
+    if(item.current){
+  %li
+    %strong!= item.name
+  - }else{
+  %li
+    %a(href="!{item.name}")!= item.name
+  - }
+  - }
+-} else {
+%p The list is empty.
+-}
+
+
