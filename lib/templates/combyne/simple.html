@@ -1,11 +1,13 @@
 <h1>{{header}}</h1>
-{%if items%}
+{%if items.length%}
 <ul>
-    {%if current%}
-    <li><strong>{{name}}</strong></li>
+  {%for items as item%}
+    {%if item.current%}
+    <li><strong>{{item.name}}</strong></li>
     {%else%}
-    <li><a href="{{url}}">{{name}}</a></li>
+    <li><a href="{{item.url}}">{{item.name}}</a></li>
     {%endif%}
+  {%endfor%}
 </ul>
 {%else%}
 <p>The list is empty.</p>
