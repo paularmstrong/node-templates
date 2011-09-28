@@ -19,7 +19,8 @@
         "jqtpl": "1.0.6",
         "mu2": "0.5.3",
         "swig": "0.4.0",
-        "Templ8": "0.2.1"
+        "Templ8": "0.2.1",
+        "combyne": "0.1.7"
     },
     "main": "index",
     "engines": {

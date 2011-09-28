@@ -11,6 +11,7 @@ View all feature comparisons and templates on the [Node Templates Page](http://p
 (_Alphabetical Order_)
 
 * [CoffeeKup@0.3.0](http://coffeekup.org/)
+* [Combyne](http://github.com/tbranyen/combyne.js)
 * [EJS@0.4.2](https://github.com/visionmedia/ejs)
 * [HamlJS@0.5.1](https://github.com/visionmedia/haml.js)
 * [Jade@0.15.4](http://jade-lang.com/)
