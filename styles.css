@@ -83,7 +83,10 @@ p, ul, ol, dl, table {
     ul, ol, dl {
         margin-left: 24px;
     }
-        ul li { list-style-type: disc; }
+        ul li, ol li {
+            list-style-type: disc;
+            margin-bottom: 0.3em;
+        }
         ul li li { list-style-type: square; }
         ul li li li { list-style-type: circle; }
         ol li { list-style-type: decimal; }
