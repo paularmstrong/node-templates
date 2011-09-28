@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Node Templates</title>
+
+    <link rel="stylesheet" href="styles.css" type="text/css" media="all">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Contributing to Node Templates</h1>
+
+        <a id="github" href="https://github.com/paularmstrong/node-templates"><span>Fork me on GitHub!</span> <span>Feel awesome!</span></a>
+
+        <nav>
+            <h2>Pages</h2>
+            <ul>
+                <li><a href="index.html">Feature Comparison</a></li>
+                <li><a href="benchmarks.html">Benchmarks</a></li>
+                <li><a href="contributing.html">Contributing</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Want To Add Another Node.js Template Engine?</h2>
+
+        <p>If you'd like to contribute another library to this project, that'd be really awesome. Just to be fair, there are a few ground-rules:</p>
+
+        <ul>
+            <li>After cloning the repository, run <code>make</code> to install all dependencies and commit hooks. Your commits will automatically be required to pass JSLint.</li>
+            <li><em>Do not</em> checkout or push to the <code>gh-pages</code> branch. Doing so on Github will create duplicate pages and hurt findability on search engines.</li>
+            <li>All libraries must be available via the NPM package install.</li>
+            <li>Add the library and specific version number (no fuzzy versions allowed) to <code>package.json</code>.</li>
+            <li>Implement the template as closely as possible to all others provided. Shortcuts and optimizations to do the same thing are <em>encouraged</em>, especially if they make the library compile and render steps faster.</li>
+            <li>Add the new template engine to the features table of <code>index.html</code>.</li>
+            <li><em>Do not</em> add new benchmarks to the <code>index.html</code> file. Implementation will be reviewed and a full benchmark run will be done.</li>
+            <li>If you did all of that, you are really awesome.</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>Created for the Node.js community by <a href="http://paularmstrongdesigns.com">Paul Armstrong</a>.</p>
+    </footer>
+
+    <script>
+    $(document).ready(function () {
+        $('table#features tbody tr th:first-child').bind('click', function () {
+            var remove = [],
+                i = 0,
+                els = null,
+                row = $(this).parent('tr').toggleClass('selected').parent('tbody').find('.selected').each(function () {
+                    $(this).find('td').each(function (i) {
+                        if ($(this).has('span.no').length) {
+                            remove.push(i + 2);
+                        }
+                    });
+                });
+
+            $('table#features thead th, table#features tbody td').removeClass('nonmatch');
+            i = remove.length;
+            while (i) {
+                i -= 1;
+                els = $('table#features thead th:nth-child(' + remove[i] + '), table#features tbody td:nth-child(' + remove[i] + ')').addClass('nonmatch');
+            }
+        });
+    });
+    </script>
+
+</body>
+</html>
