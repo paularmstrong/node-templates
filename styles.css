@@ -77,6 +77,18 @@ h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
 em, i { font-style: italic; }
 strong, b { font-weight: bold; }
 
+nav h2 {
+    font-size: 18px;
+}
+nav ul {
+    margin: 0 0 24px;
+}
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 24px 0 0;
+}
+
 p, ul, ol, dl, table {
     margin: 0 0 24px;
 }
