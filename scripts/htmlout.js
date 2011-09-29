@@ -70,7 +70,7 @@ child_process.exec('node index.js -c ' + runs + ' -m ' + time + ' -t ' + type + 
     out += '\t<caption>' + type + '</caption>\n';
     out += '\t<thead>\n';
     out += '\t\t<tr>\n';
-    out += '\t\t\t<th>Engine</th>\n';
+    out += '\t\t\t<th>Engine (npm name)</th>\n';
     out += '\t\t\t<th>Average (mean)</th>\n';
     out += '\t\t\t<th colspan="' + benched[0].runs.length + '">Scores (bigger is better)</th>\n';
     out += '\t\t</tr>\n';
