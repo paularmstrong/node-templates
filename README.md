@@ -10,13 +10,15 @@ View all feature comparisons and templates on the [Node Templates Page](http://p
 
 (_Alphabetical Order_)
 
-* [CoffeeKup@0.3.0](http://coffeekup.org/)
-* [EJS@0.4.2](https://github.com/visionmedia/ejs)
-* [HamlJS@0.5.1](https://github.com/visionmedia/haml.js)
-* [Jade@0.15.4](http://jade-lang.com/)
+* [coffeekup@0.3.0](http://coffeekup.org/)
+* [dust@0.3.0](http://akdubya.github.com/dustjs/)
+* [ejs@0.4.2](https://github.com/visionmedia/ejs)
+* [haml@0.4.2](https://github.com/creationix/haml-js)
+* [hamljs@0.5.1](https://github.com/visionmedia/haml.js)
+* [jade@0.16.0](http://jade-lang.com/)
 * [jqtpl@1.0.6](https://github.com/kof/node-jqtpl)
 * [mu2@0.5.3](https://github.com/raycmorgan/Mu)
-* [swig@0.4.0](https://github.com/paularmstrong/swig)
+* [swig@0.5.0](https://github.com/paularmstrong/swig)
 * [Templ8@0.2.1](https://github.com/constantology/Templ8)
 
 ## Running
