@@ -12,7 +12,6 @@
         "nodelint": "0.5.2",
         "underscore": ">=1.1.7",
         "coffeekup": "0.3.0",
-        "dust": "0.3.0",
         "ejs": "0.4.2",
         "hamljs": "0.5.1",
         "haml": "0.4.2",

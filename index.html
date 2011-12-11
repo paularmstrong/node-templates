@@ -30,7 +30,6 @@
         <h2>Template Languages <span>(alphabetical)</span></h2>
         <ul>
             <li><a href="http://coffeekup.org/">CoffeeKup</a> - Markup as CoffeeScript.</li>
-            <li><a href="http://akdubya.github.com/dustjs/">Dust</a> - Asynchronous templates for the browser and node.js</li>
             <li><a href="https://github.com/visionmedia/ejs">EJS</a> - Embedded JavaScript templates</li>
             <li><a href="https://github.com/creationix/haml-js">Haml-js</a> - Haml ported to server-side Javascript. This is a traditional server-side templating language.</li>
             <li><a href="https://github.com/visionmedia/haml.js">Haml.js</a> - Faster / Express compliant Haml implementation</li>
@@ -52,7 +51,6 @@
                 <tr>
                     <th>(click to toggle)</th>
                     <th scope="col">CoffeeKup</th>
-                    <th scope="col">Dust</th>
                     <th scope="col">EJS</th>
                     <th scope="col">Haml-js</th>
                     <th scope="col">Haml.js</th>
@@ -68,7 +66,6 @@
                 <tr>
                     <th scope="row">Express Support</th>
                     <td><span class="yes">✔</span></td>
-                    <td><a class="partial" href="#dust-express">✜</a></td>
                     <td><span class="yes">✔</span></td>
                     <td><span class="no">✖</span></td>
                     <td><span class="yes">✔</span></td>
@@ -81,7 +78,6 @@
                 </tr>
                 <tr>
                     <th scope="row">Browser Support</th>
-                    <td><span class="yes">✔</span></td>
                     <td><span class="yes">✔</span></td>
                     <td><span class="no">✖</span></td>
                     <td><span class="yes">✔</span></td>
@@ -105,12 +101,10 @@
                     <td><span class="yes">✔</span></td>
                     <td><span class="yes">✔</span></td>
                     <td><span class="yes">✔</span></td>
-                    <td><span class="yes">✔</span></td>
                 </tr>
                 <tr>
                     <th scope="row">Variable Filters</th>
                     <td><span class="no">✖</span></td>
-                    <td><span class="yes">✔</span></td>
                     <td><span class="yes">✔</span></td>
                     <td><span class="no">✖</span></td>
                     <td><span class="no">✖</span></td>
@@ -124,7 +118,6 @@
                 <tr>
                     <th scope="row">Shorthand HTML Syntax</th>
                     <td><span class="yes">✔</span></td>
-                    <td><span class="no">✖</span></td>
                     <td><span class="no">✖</span></td>
                     <td><span class="yes">✔</span></td>
                     <td><span class="yes">✔</span></td>
@@ -141,7 +134,6 @@
                     <td><span class="no">✖</span></td>
                     <td><span class="no">✖</span></td>
                     <td><span class="no">✖</span></td>
-                    <td><span class="no">✖</span></td>
                     <td><span class="yes">✔</span></td>
                     <td><span class="no">✖</span></td>
                     <td><span class="no">✖</span></td>
@@ -152,7 +144,6 @@
                 <tr>
                     <th scope="row">Escapes Output</th>
                     <td><span class="no">✖</span></td>
-                    <td><span class="yes">✔</span></td>
                     <td><span class="yes">✔</span></td>
                     <td><span class="yes">✔</span></td>
                     <td><span class="yes">✔</span></td>
@@ -175,11 +166,9 @@
                     <td><span class="yes">✔</span></td>
                     <td><span class="yes">✔</span></td>
                     <td><span class="yes">✔</span></td>
-                    <td><span class="yes">✔</span></td>
                 </tr>
                 <tr>
                     <th scope="row"><code>if/else</code> Conditionals</th>
-                    <td><span class="yes">✔</span></td>
                     <td><span class="yes">✔</span></td>
                     <td><span class="yes">✔</span></td>
                     <td><span class="yes">✔</span></td>
@@ -194,7 +183,6 @@
                 <tr>
                     <th scope="row"><code>else if</code> Conditionals</th>
                     <td><span class="yes">✔</span></td>
-                    <td><span class="no">✖</span></td>
                     <td><span class="yes">✔</span></td>
                     <td><span class="yes">✔</span></td>
                     <td><span class="no">✖</span></td>
@@ -207,7 +195,6 @@
                 </tr>
                 <tr>
                     <th scope="row">Extendable Tags, Logic, and/or Filters</th>
-                    <td><span class="yes">✔</span></td>
                     <td><span class="yes">✔</span></td>
                     <td><span class="no">✖</span></td>
                     <td><span class="no">✖</span></td>
@@ -231,32 +218,27 @@
                     <td><span class="yes">✔</span></td>
                     <td><span class="yes">✔</span></td>
                     <td><span class="yes">✔</span></td>
-                    <td><span class="yes">✔</span></td>
                 </tr>
             </tbody>
             <tfoot>
                 <tr>
-                    <th colspan="12">Footnotes</th>
-                </tr>
-                <tr id="dust-express">
-                    <th><span class="partial">✜ Dust Express Support</span></th>
-                    <td colspan="11">Dust can be supported in Express via <a href="https://github.com/davglass/express-dust">express-dust</a></td>
+                    <th colspan="11">Footnotes</th>
                 </tr>
                 <tr id="jqtpl-browser">
                     <th><span class="partial">✜ JQTpl Browser Support</span></th>
-                    <td colspan="11">JQTpl can be supported in the browser via the <a href="https://github.com/jquery/jquery-tmpl">jQuery Templates plugin</a></td>
+                    <td colspan="10">JQTpl can be supported in the browser via the <a href="https://github.com/jquery/jquery-tmpl">jQuery Templates plugin</a></td>
                 </tr>
                 <tr id="mu-browser">
                     <th><span class="partial">✜ Mu Browser Support</span></th>
-                    <td colspan="11">Mu2/Mustache can be supported in the browser via <a href="https://github.com/janl/mustache.js">mustache.js</a>.</td>
+                    <td colspan="10">Mu2/Mustache can be supported in the browser via <a href="https://github.com/janl/mustache.js">mustache.js</a>.</td>
                 </tr>
                 <tr id="mu-ifelse">
                     <th><span class="partial">✜ Mu <code>if / else</code></span></th>
-                    <td colspan="11">Mu2/Mustache only supports <code>if</code> logic.</td>
+                    <td colspan="10">Mu2/Mustache only supports <code>if</code> logic.</td>
                 </tr>
                 <tr id="partials">
                     <th><span class="partial">✜ Partials</span></th>
-                    <td colspan="11">Language has some way to include and render sub-templates from within the main template.</td>
+                    <td colspan="10">Language has some way to include and render sub-templates from within the main template.</td>
                 </tr>
             </tfoot>
         </table>
