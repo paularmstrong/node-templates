@@ -1,0 +1,14 @@
+<h1>{header}</h1>
+{#items}
+<ul>
+{#item}
+  {^current}
+  <li><strong>{name}</strong></li>
+  {:else}
+  <li><a href="{url}">{name}</a></li>
+  {/current}
+{/item}
+</ul>
+{:else}
+<p>The list is empty.</p>
+{/items}

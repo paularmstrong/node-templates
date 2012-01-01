@@ -6,6 +6,7 @@
     "repository": "https://github.com/paularmstrong/node-templates.git",
     "homepage": "http://paularmstrong.github.com/node-templates/",
     "author": "Paul Armstrong <paul@paularmstrongdesigns.com>",
+    "contributors" : ["Scott Sanders <scott@stonecobra.com>"],
     "dependencies": {
         "nopt": ">=1.0.8",
         "bench": ">=0.3.2",
@@ -18,9 +19,12 @@
         "jade": "0.16.0",
         "jqtpl": "1.0.6",
         "mu2": "0.5.3",
-        "swig": "0.7.0",
-        "Templ8": "0.2.1",
-        "whiskers": "0.1.0"
+        "swig": "0.9.0",
+        "Templ8": "0.3.0",
+        "whiskers": "0.1.2",
+        "dust.js": "0.1.0",
+        "abbrev": "1.0.3",
+        "coffee-script": "1.2.0"
     },
     "main": "index",
     "engines": {
