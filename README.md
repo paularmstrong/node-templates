@@ -11,11 +11,7 @@ View all feature comparisons and templates on the [Node Templates Page](http://p
 (_Alphabetical Order_)
 * [coffeekup@0.3.0](http://coffeekup.org/)
 * [dust.js@0.1.0](https://github.com/stanislavfeldman/dust.js), until [dust](http://akdubya.github.com/dustjs/) supports node > 0.4
-<<<<<<< Updated upstream
-* [ejs@0.4.2](https://github.com/visionmedia/ejs)
-=======
 * [ejs@0.6.1](https://github.com/visionmedia/ejs)
->>>>>>> Stashed changes
 * [haml@0.4.2](https://github.com/creationix/haml-js)
 * [hamljs@0.5.2](https://github.com/visionmedia/haml.js)
 * [jade@0.20.0](http://jade-lang.com/)
