@@ -13,14 +13,15 @@
         "underscore": ">=1.1.7",
         "coffeekup": "0.3.0",
         "ejs": "0.4.2",
-        "hamljs": "0.5.1",
+        "hamljs": "0.6.0",
         "haml": "0.4.2",
-        "jade": "0.16.0",
+        "jade": "0.26.1",
         "jqtpl": "1.0.6",
         "mu2": "0.5.3",
         "swig": "0.7.0",
         "Templ8": "0.2.1",
-        "whiskers": "0.1.0"
+        "whiskers": "0.1.0",
+        "eco": "1.1.0-rc-3"
     },
     "main": "index",
     "engines": {
