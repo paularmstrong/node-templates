@@ -1,0 +1,16 @@
+<h1><%= tmpl.header %></h1>
+<% if (tmpl.items.length) { %>
+<ul>
+<% for (var i = 0, item; (item = tmpl.items[i]); i++) { %>
+    <% if (item.current) { %>
+    <li><strong><%= item.name %></strong></li>
+    <% } %>
+    <% if (!item.current) { %>
+    <li><a href="<%= item.url %>"><%= item.name %></a></li>
+    <% } %>
+<% } %>
+</ul>
+<% } %>
+<% if (tmpl.items.length == 0) { %>
+    <p>The list is empty.</p>
+<% } %>
