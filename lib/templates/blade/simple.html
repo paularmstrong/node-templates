@@ -1,0 +1,13 @@
+h1= header
+- if(items.length)
+  ul
+    - for(var i = 0; i < items.length; i++)
+      - var item = items[i]
+      - if(item.current)
+        li
+          strong= item.name
+      - else
+        li
+          a(href=item.url)= item.name
+- else
+  p The list is empty.
