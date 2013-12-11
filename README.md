@@ -20,6 +20,7 @@ View all feature comparisons and templates on the [Node Templates Page](http://p
 * [mu2@0.5.3](https://github.com/raycmorgan/Mu)
 * [swig@0.5.0](https://github.com/paularmstrong/swig)
 * [Templ8@0.2.1](https://github.com/constantology/Templ8)
+* [Vash@0.3.1-327](https://github.com/kirbysayshi/Vash)
 
 ## Running
 
