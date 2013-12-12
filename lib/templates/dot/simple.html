@@ -1,0 +1,17 @@
+<h1>{{= it.header }}</h1>
+
+{{? it.items.length }}
+  <ul>
+  {{~it.items :item}}
+      {{? item.current }}
+      <li><strong>{{= item.name }}</strong></li>
+      {{??}}
+      <li><a href="{{= item.url }}">{{= item.name }}</a></li>
+      {{?}}
+  {{~}}
+  </ul>
+{{?}}
+
+{{? it.items.length === 0 }}
+    <p>The list is empty.</p>
+{{?}}

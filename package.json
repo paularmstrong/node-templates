@@ -20,7 +20,8 @@
         "mu2": "0.5.3",
         "swig": "0.7.0",
         "Templ8": "0.2.1",
-        "whiskers": "0.1.0"
+        "whiskers": "0.1.0",
+        "dot": "1.0.2"
     },
     "main": "index",
     "engines": {
